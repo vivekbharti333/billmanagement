@@ -6,10 +6,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+@CrossOrigin(origins = "*")
+@RestController
 public class UserController {
 	
 	@Autowired
@@ -17,8 +21,8 @@ public class UserController {
 	
 	@RequestMapping(value = "/")
 	public ModelAndView test(HttpServletResponse response) throws IOException {
-		
-		return new ModelAndView("index");
+		System.out.println("Enter");
+		return new ModelAndView("login");
 	}
 	
 	
