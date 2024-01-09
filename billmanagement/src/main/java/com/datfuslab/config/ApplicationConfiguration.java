@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 
 @Configuration
-@ComponentScan(basePackages="com.spring.*")
+@ComponentScan(basePackages="com.datfuslab.*")
 @EnableWebMvc
 public class ApplicationConfiguration implements WebMvcConfigurer {
 
