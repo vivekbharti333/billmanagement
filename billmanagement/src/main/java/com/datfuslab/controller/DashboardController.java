@@ -14,30 +14,22 @@ import org.springframework.web.servlet.ModelAndView;
 
 @CrossOrigin(origins = "*")
 @RestController
-public class UserController {
+public class DashboardController {
 	
 	@Autowired
 	public HttpServletRequest request;
 	
-	@RequestMapping(value = "/testq")
-	public ModelAndView test(HttpServletResponse response) throws IOException {
-		System.out.println("Enter");
+	@RequestMapping(value = "dashboard")
+	public ModelAndView dashboard(HttpServletResponse response) throws IOException {
 		return new ModelAndView("dashboard");
 	}
 	
+	@RequestMapping(value = "/")
+	public ModelAndView login(HttpServletResponse response) throws IOException {
+		return new ModelAndView("login");
+	}
 	
-	@RequestMapping(value = "version")
-	public String version(HttpServletResponse response) throws IOException {
-		return "1.2";
-	}
-
-//	@Scheduled(fixedDelay = 5000)
-	@RequestMapping(path = "test", method = RequestMethod.GET)
-	public String test() throws Exception {
-		
-		String clientIp = request.getHeader("X-Forwarded-For") != null ? request.getHeader("X-Forwarded-For") : request.getRemoteAddr();
-		
-	return "Working : "+clientIp;
-	}
+	
+	
 
 }
