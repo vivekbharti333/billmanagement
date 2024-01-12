@@ -30,6 +30,11 @@ public class DashboardController {
 	}
 	
 	
+	@RequestMapping(value = "uploadBill")
+	public ModelAndView uploadBill(HttpServletResponse response) throws IOException {
+		return new ModelAndView("upload-bill");
+	}
+	
 	
 
 }

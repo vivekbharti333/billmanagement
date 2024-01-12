@@ -1,5 +1,6 @@
 	<div class="footer-wrap pd-20 mb-20 card-box">
-				Invoice Management - Uttar Pradesh Government By <a href="https://datafusionlab.in/" target="_blank">DataFusion Lab</a>
+				<!-- Invoice Management - Uttar Pradesh Government By <a href="https://datafusionlab.in/" target="_blank">DataFusion Lab</a> -->
+				Invoice Management - Uttar Pradesh Government</a>
 	</div>
 
 	<!-- js -->

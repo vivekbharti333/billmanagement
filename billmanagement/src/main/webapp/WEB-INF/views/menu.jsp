@@ -59,7 +59,7 @@
 							<span class="micon dw dw-apartment"></span><span class="mtext"> Invoice Management </span>
 						</a>
 						<ul class="submenu">
-							<li><a href="ui-buttons.html">Upload Invoice</a></li>
+							<li><a href="uploadBill">Upload Invoice</a></li>
 							<li><a href="ui-cards.html">Invoice List</a></li>
 							<!-- <li><a href="ui-cards-hover.html">Cards Hover</a></li>
 							<li><a href="ui-modals.html">Modals</a></li>
